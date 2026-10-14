@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Científico - 6º Ano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🔬 Desafio Científico</h1>
+        <p class="subtitulo">Aventura no mundo das Ciências - 6º Ano</p>
+    </header>
+
+    <main>
+        <!-- Tela Inicial -->
+        <section id="tela-inicial" class="tela ativa">
+            <div class="card">
+                <h2>Bem-vindo(a), explorador(a)! 🚀</h2>
+                <p>Teste seus conhecimentos sobre <strong>Ciências</strong> com perguntas divertidas sobre a Terra, a água, as células e muito mais!</p>
+                <p class="info">São 10 perguntas. Cada acerto vale <strong>10 pontos</strong>.</p>
+                <button id="btn-comecar" class="btn-principal">Começar Aventura!</button>
+            </div>
+        </section>
+
+        <!-- Tela do Jogo -->
+        <section id="tela-jogo" class="tela">
+            <div class="card">
+                <div class="barra-status">
+                    <span id="pontuacao">Pontos: 0</span>
+                    <span id="pergunta-atual">Pergunta 1/10</span>
+                </div>
+                <div class="progresso">
+                    <div id="barra-progresso" class="barra-progresso-preenchida"></div>
+                </div>
+                <h2 id="texto-pergunta">Pergunta aparece aqui</h2>
+                <div id="opcoes" class="opcoes">
+                    <!-- Botões de opções gerados pelo JS -->
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </section>
+
+        <!-- Tela Final -->
+        <section id="tela-final" class="tela">
+            <div class="card">
+                <h2 id="titulo-final">Parabéns!</h2>
+                <p id="mensagem-final">Você concluiu o desafio!</p>
+                <div class="resultado">
+                    <p>Sua pontuação final:</p>
+                    <p id="pontuacao-final" class="pontuacao-grande">0</p>
+                </div>
+                <div id="estrelas" class="estrelas"></div>
+                <button id="btn-reiniciar" class="btn-principal">Jogar Novamente</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Educativo de Ciências • Front-end HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
